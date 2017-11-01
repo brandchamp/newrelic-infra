@@ -9,4 +9,4 @@ base:
 install-agent:
   pkg.installed:
     - name: newrelic-infra
-    - version: latest
+    - version: 1.0.790
