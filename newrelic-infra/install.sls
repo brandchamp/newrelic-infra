@@ -1,6 +1,6 @@
 base:
   pkgrepo.managed:
-    - name: deb https://download.newrelic.com/infrastructure_agent/linux/apt {{ grains.get('oscodename') }} main
+    - name: deb [arch=amd64] https://download.newrelic.com/infrastructure_agent/linux/apt {{ grains.get('oscodename') }} main
     - dist: {{ grains.get('oscodename') }}
     - file: /etc/apt/sources.list.d/newrelic.list
     - gpgcheck: 1
